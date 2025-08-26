@@ -13,6 +13,7 @@ use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
 use App\Filament\Resources\HomeSettingResource\Pages;
 use App\Filament\Resources\HomeSettingResource\RelationManagers;
+use Filament\Forms\Components\TextInput;
 
 class HomeSettingResource extends Resource
 {
@@ -24,14 +25,13 @@ class HomeSettingResource extends Resource
     {
         return $form
             ->schema([
-                Textinput::make('title'),
-                Textinput::make('path_image')->default(''),
-                Textinput::make('path_video')->default(''),
-                Textinput::make('url_click')->default(''),
-                Textinput::make('type'),
-                Textinput::make('posisi'),
-                Textinput::make('created_by'),
-                Textinput::make('updated_by'),
+                TextInput::make('title'),
+                TextInput::make('video_path')->default('-'),
+                TextInput::make('url_click')->default(''),
+                TextInput::make('type'),
+                TextInput::make('posisi'),
+                TextInput::make('created_by'),
+                TextInput::make('updated_by'),
             ]);
     }
 
@@ -40,8 +40,7 @@ class HomeSettingResource extends Resource
         return $table
             ->columns([
                 TextColumn::make('title'),
-                TextColumn::make('path_image'),
-                TextColumn::make('path_video'),
+                TextColumn::make('video_path'),
                 TextColumn::make('url_click'),
                 TextColumn::make('type'),
                 TextColumn::make('posisi'),

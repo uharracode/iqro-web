@@ -12,6 +12,9 @@ class HomePageController extends Controller
     public function index()
     {
         return view('home.index');
+        $articles =Home::where('type', 'article')->orderBy('id','desc')->get();
+        $poster = Home::where('type', 'poster')->orderBy('id','desc')->get();
+        $banner = Home::where('type', 'banner')->orderBy('id','desc')->get();
     }
 
     /**

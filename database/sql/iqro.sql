@@ -79,7 +79,7 @@ INSERT INTO `home_settings` (`id`, `title`, `path_image`, `path_video`, `url_cli
 (30, 'Maaf', 'https://iqro.or.id/wp-content/uploads/2025/04/ChatGPT-Image-Apr-22-2025-12_02_42-PM-600x400.png', NULL, 'https://iqro.or.id/2025/04/22/maaf/', 'article', 'beranda', 0, 0, NULL, NULL, NULL),
 (31, 'Permisi', 'https://iqro.or.id/wp-content/uploads/2025/04/ChatGPT-Image-Apr-21-2025-02_16_37-PM-600x400.png', NULL, 'https://iqro.or.id/2025/04/21/permisi/', 'article', 'beranda', 0, 0, NULL, NULL, NULL),
 (32, 'HTQ', NULL, NULL, NULL, 'article', 'highlight', 0, 0, NULL, NULL, NULL),
-(33, 'Poster-Quotes 01', 'https://iqro.or.id/wp-content/uploads/2025/03/6-scaled.jpg', NULL, NULL, 'image', 'quote', 0, 0, NULL, NULL, NULL),
+(33, 'Poster-Quotes 01', 'https://iqro.or.id/wp-content/uplo1ads/2025/03/6-scaled.jpg', NULL, NULL, 'image', 'quote', 0, 0, NULL, NULL, NULL),
 (34, 'Poster-Quotes 02', 'https://iqro.or.id/wp-content/uploads/2025/03/3-scaled.jpg', NULL, NULL, 'image', 'quote', 0, 0, NULL, NULL, NULL),
 (35, 'Poster-Quotes 03', 'https://iqro.or.id/wp-content/uploads/2025/03/5-scaled.jpg', NULL, NULL, 'image', 'quote', 0, 0, NULL, NULL, NULL),
 (36, 'Video-Quotes 01', NULL, 'https://iqro.or.id/wp-content/uploads/2025/03/Tidak-pernah-ada-seseorang-yang-tujuan-hidupnya-kesenangan-dunia-kecuali-hatinya-pasti-merasakan-4-hal.mp4', NULL, 'video', 'quote', 0, 0, NULL, NULL, NULL),

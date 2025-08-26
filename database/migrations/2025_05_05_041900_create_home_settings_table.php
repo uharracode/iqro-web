@@ -14,8 +14,7 @@ return new class extends Migration
         Schema::create('home_settings', function (Blueprint $table) {
             $table->id();
             $table->string('title');
-            $table->string('path_image')->nullable();
-            $table->string('path_video')->nullable();
+            $table->string('video_path')->nullable(); // Pastikan kolom ini ada
             $table->string('url_click')->nullable();
             $table->string('type')->default('image','video');
             $table->string('posisi')->default('slider','banner','Higlight','video-list');
