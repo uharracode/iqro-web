@@ -1121,6 +1121,477 @@ h5,
     }
 }
 
+/*--------------------------------------------------------------
+# Clients Section
+--------------------------------------------------------------*/
+.clients {
+    padding: 20px 0;
+}
+
+.clients .client-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.clients .client-logo img {
+    padding: 20px 40px;
+    max-width: 90%;
+    transition: 0.3s;
+    opacity: 0.5;
+    filter: grayscale(100);
+}
+
+.clients .client-logo img:hover {
+    filter: none;
+    opacity: 1;
+}
+
+@media (max-width: 640px) {
+    .clients .client-logo img {
+        padding: 20px;
+    }
+}
+
+/*--------------------------------------------------------------
+# Testimonials Section
+--------------------------------------------------------------*/
+.testimonials .info h3 {
+    font-weight: 700;
+    font-size: 32px;
+}
+
+.testimonials .swiper {
+    box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.05);
+    background-color: var(--surface-color);
+}
+
+.testimonials .testimonials-carousel,
+.testimonials .testimonials-slider {
+    overflow: hidden;
+}
+
+.testimonials .testimonial-item {
+    box-sizing: content-box;
+    min-height: 200px;
+    position: relative;
+    margin: 30px;
+}
+
+.testimonials .testimonial-item .testimonial-img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50px;
+    border: 6px solid var(--background-color);
+    margin-right: 10px;
+}
+
+.testimonials .testimonial-item h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0 5px 0;
+}
+
+.testimonials .testimonial-item h4 {
+    color: color-mix(in srgb, var(--default-color), transparent 50%);
+    font-size: 14px;
+    margin: 0;
+}
+
+.testimonials .testimonial-item .stars {
+    margin: 10px 0;
+}
+
+.testimonials .testimonial-item .stars i {
+    color: #ffc107;
+    margin: 0 1px;
+}
+
+.testimonials .testimonial-item .quote-icon-left,
+.testimonials .testimonial-item .quote-icon-right {
+    color: color-mix(in srgb, var(--accent-color), transparent 60%);
+    font-size: 26px;
+    line-height: 0;
+}
+
+.testimonials .testimonial-item .quote-icon-left {
+    display: inline-block;
+    left: -5px;
+    position: relative;
+}
+
+.testimonials .testimonial-item .quote-icon-right {
+    display: inline-block;
+    right: -5px;
+    position: relative;
+    top: 10px;
+    transform: scale(-1, -1);
+}
+
+.testimonials .testimonial-item p {
+    font-style: italic;
+    margin: 15px auto 15px auto;
+}
+
+.testimonials .swiper-wrapper {
+    height: auto;
+}
+
+.testimonials .swiper-pagination {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.testimonials .swiper-pagination .swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    background-color: color-mix(in srgb, var(--default-color), transparent 85%);
+    opacity: 1;
+    border: none;
+}
+
+.testimonials .swiper-pagination .swiper-pagination-bullet-active {
+    background-color: var(--accent-color);
+}
+
+@media (max-width: 767px) {
+    .testimonials .testimonials-carousel,
+    .testimonials .testimonials-slider {
+        overflow: hidden;
+    }
+
+    .testimonials .testimonial-item {
+        margin: 15px;
+    }
+}
+
+/*--------------------------------------------------------------
+# Students Life Block Section
+--------------------------------------------------------------*/
+.students-life-block .content-wrapper .section-tag {
+    display: inline-block;
+    font-size: 0.875rem;
+    font-weight: 300;
+    color: var(--accent-color);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.students-life-block .content-wrapper .section-tag::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    width: 40px;
+    height: 1px;
+    background: var(--accent-color);
+}
+
+.students-life-block .content-wrapper h2 {
+    font-size: 2.75rem;
+    font-weight: 300;
+    line-height: 1.3;
+    margin-bottom: 2rem;
+    color: var(--heading-color);
+}
+
+@media (max-width: 768px) {
+    .students-life-block .content-wrapper h2 {
+        font-size: 2.25rem;
+    }
+}
+
+.students-life-block .content-wrapper .description {
+    font-size: 1.125rem;
+    line-height: 1.7;
+    color: color-mix(in srgb, var(--default-color), transparent 25%);
+    margin-bottom: 3rem;
+}
+
+.students-life-block .stats-row {
+    display: flex;
+    gap: 3rem;
+    margin-bottom: 3rem;
+}
+
+.students-life-block .stats-row .stat-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.students-life-block .stats-row .stat-item .stat-number {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: var(--accent-color);
+    line-height: 1;
+    margin-bottom: 0.5rem;
+}
+
+.students-life-block .stats-row .stat-item .stat-label {
+    font-size: 0.95rem;
+    color: color-mix(in srgb, var(--default-color), transparent 40%);
+    font-weight: 300;
+}
+
+@media (max-width: 576px) {
+    .students-life-block .stats-row {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+}
+
+.students-life-block .action-links .primary-link {
+    color: var(--heading-color);
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 1rem;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.students-life-block .action-links .primary-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0;
+    height: 1px;
+    background: var(--accent-color);
+    transition: width 0.3s ease;
+}
+
+.students-life-block .action-links .primary-link:hover {
+    color: var(--accent-color);
+}
+
+.students-life-block .action-links .primary-link:hover::after {
+    width: 100%;
+}
+
+.students-life-block .visual-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    height: 100%;
+}
+
+.students-life-block .visual-grid .main-visual {
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.students-life-block .visual-grid .main-visual img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.students-life-block .visual-grid .main-visual:hover img {
+    transform: scale(1.05);
+}
+
+.students-life-block .visual-grid .main-visual .overlay-badge {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    background: var(--surface-color);
+    padding: 1rem 1.5rem;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.students-life-block .visual-grid .main-visual .overlay-badge i {
+    color: var(--accent-color);
+    font-size: 1.25rem;
+}
+
+.students-life-block .visual-grid .main-visual .overlay-badge span {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--heading-color);
+}
+
+.students-life-block .visual-grid .secondary-visuals {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+}
+
+.students-life-block .visual-grid .secondary-visuals .small-visual {
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.students-life-block .visual-grid .secondary-visuals .small-visual img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.students-life-block .visual-grid .secondary-visuals .small-visual:hover img {
+    transform: scale(1.1);
+}
+
+.students-life-block
+    .visual-grid
+    .secondary-visuals
+    .small-visual:hover
+    .visual-caption {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.students-life-block
+    .visual-grid
+    .secondary-visuals
+    .small-visual
+    .visual-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+    padding: 2rem 1.5rem 1.5rem;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: all 0.3s ease;
+}
+
+.students-life-block
+    .visual-grid
+    .secondary-visuals
+    .small-visual
+    .visual-caption
+    span {
+    color: var(--contrast-color);
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.students-life-block .highlights-section {
+    margin-top: 6rem;
+}
+
+.students-life-block .highlights-section .highlight-card {
+    background: var(--surface-color);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.students-life-block .highlights-section .highlight-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+}
+
+.students-life-block .highlights-section .highlight-card .highlight-image {
+    overflow: hidden;
+}
+
+.students-life-block .highlights-section .highlight-card .highlight-image img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.students-life-block
+    .highlights-section
+    .highlight-card:hover
+    .highlight-image
+    img {
+    transform: scale(1.1);
+}
+
+.students-life-block .highlights-section .highlight-card .highlight-content {
+    padding: 2rem;
+}
+
+.students-life-block .highlights-section .highlight-card .highlight-content h5 {
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    color: var(--heading-color);
+}
+
+.students-life-block .highlights-section .highlight-card .highlight-content p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: color-mix(in srgb, var(--default-color), transparent 30%);
+    margin: 0;
+}
+
+@media (max-width: 991.98px) {
+    .students-life-block .content-wrapper {
+        margin-bottom: 2rem;
+    }
+
+    .students-life-block .visual-grid .main-visual img {
+        height: 300px;
+    }
+
+    .students-life-block .visual-grid .secondary-visuals .small-visual img {
+        height: 140px;
+    }
+
+    .students-life-block .highlights-section {
+        margin-top: 4rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .students-life-block .stats-row {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .students-life-block .visual-grid .main-visual .overlay-badge {
+        top: 20px;
+        right: 20px;
+        padding: 0.75rem 1.25rem;
+    }
+
+    .students-life-block .visual-grid .secondary-visuals {
+        grid-template-columns: 1fr;
+    }
+
+    .students-life-block .visual-grid .secondary-visuals .small-visual img {
+        height: 200px;
+    }
+
+    .students-life-block .highlights-section {
+        margin-top: 3rem;
+    }
+
+    .students-life-block
+        .highlights-section
+        .highlight-card
+        .highlight-content {
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .students-life-block .visual-grid .main-visual .overlay-badge {
+        position: relative;
+        top: auto;
+        right: auto;
+        margin-top: 1rem;
+        display: inline-flex;
+    }
+}
+
 /* Blocks */
 .site-section-cover {
     position: relative;

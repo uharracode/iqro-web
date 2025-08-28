@@ -14,14 +14,13 @@ class HomeController extends Controller
     public function index()
     {
     $articles = Home::with('media')->where('posisi', 'berita')->orderBy('id','desc')->get();
-    $beranda = Home::with('media')->where('posisi', 'beranda')->orderBy('id','desc')->limit(4)->get();
     $poster = Home::with('media')->where('posisi', 'poster')->orderBy('id','desc')->limit(10)->get();
     $banner = Home::with('media')->where('posisi', 'slider')->orderBy('id','desc')->limit(10)->get();
     $video = Home::with('media')->where('posisi', 'video')->orderBy('id','desc')->limit(10)->get();
     $logos = Home::with('media')->where('posisi', 'logo')->orderBy('id','desc')->limit(10)->get();
     $profile = Home::with('media')->where('posisi', 'profil')->orderBy('id','desc')->limit(10)->get();
-    $viqro = Home::with('media')->where('posisi', 'vide-utama')->orderBy('id','desc')->get();
-        return view('home.index',compact('articles', 'poster', 'banner','video','logos','video','profile'));
+    $testimoni = Home::with('media')->where('posisi', 'testimoni')->orderBy('id','desc')->get();
+            return view('home.index',compact('articles', 'poster', 'banner','video','logos','video','profile','testimoni'));
             
     }
 
